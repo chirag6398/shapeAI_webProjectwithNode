@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <style>
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+ text-align: center;
+ border: 1px solid lightgray;
+ height: 20px;
+     margin: 10px 10px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 100px;
+    background-color: rgba(186, 186, 250, 0.884);
+    cursor: pointer;
+    transition: 1s all ease-out;
+}
+button:hover{
+    background-color: rgb(74, 74, 216);
+    color:white;
+}
+
+    </style>
+  </head>
+  <body>
+      <div>
+        <h1>Calculator</h1>
+        <form action="/" method="post">
+          <input type="text" name="num1" placeholder="First number">
+          <input type="text" name="num2" placeholder="Second number">
+          <button type="submit" name="submit">Calculate</button>
+        </form>
+      </div>
+    
+  </body>
+</html>
